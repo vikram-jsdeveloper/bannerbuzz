@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import mockData from "../utils/mockData";
 import styles from "./ProductListWithFilter.module.scss";
 import FilterSidebar from "./FilterSidebar";
+import Image from "next/image";
+import Link from "next/link";
 
 const ProductListWithFilter = () => {
   type List = {
@@ -33,13 +35,13 @@ const ProductListWithFilter = () => {
     <div className={styles.container}>
       <ul className={styles.breadcrumbs}>
         <li>
-          <a href="/">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="/">Banner</a>
+          <Link href="/">Banner</Link>
         </li>
         <li>
-          <a href="/">Vinyl Banners</a>
+          <Link href="/">Vinyl Banners</Link>
         </li>
       </ul>
       <div className={styles.topBar}>
@@ -63,14 +65,19 @@ const ProductListWithFilter = () => {
             <ul>
               {displayedItems.map((items) => (
                 <li key={items.objectID}>
-                  <a
+                  <Link
                     href={items.url}
                     target="_blank"
                     aria-label={items.name}
                     className={styles.productImgBox}
                   >
-                    <img src={items.image_url} alt={items.name} />
-                  </a>
+                    <Image
+                      width={212}
+                      height={194}
+                      src={items.image_url}
+                      alt={items.name}
+                    />
+                  </Link>
                   <p className={styles.cProductName}>{items.name}</p>
                   <div className={styles.ratingBox}>
                     <span className={styles.reviewRateBox}>
@@ -88,7 +95,7 @@ const ProductListWithFilter = () => {
                     Start at: <span>{items.price.USD.default_formated}</span>
                   </div>
                   <div className={styles.btnBox}>
-                    <a href={items.url}>Customize</a>
+                    <Link href={items.url}>Customize</Link>
                   </div>
                 </li>
               ))}

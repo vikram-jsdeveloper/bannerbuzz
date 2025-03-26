@@ -1,3 +1,4 @@
+import Link from "next/link";
 import FAQAccordion from "./FaqAccordion";
 import styles from "./Footer.module.scss";
 
@@ -23,9 +24,9 @@ export default function Footer() {
           For product launches, campaigns, event promotions, celebrations, and
           more, leverage the power of vinyl banners to make a lasting impact in
           diverse settings. We are offering wide range of&nbsp;{" "}
-          <a href="https://www.bannerbuzz.com/custom-vinyl-banners/p">
+          <Link href="https://www.bannerbuzz.com/custom-vinyl-banners/p">
             custom vinyl banner.
-          </a>
+          </Link>
         </p>
         <h2>
           <strong>Why Choose us for Exceptional Vinyl Banners?</strong>
@@ -34,9 +35,9 @@ export default function Footer() {
           <li>
             <b>Easy to Customize:</b> Bring your vision to life with our
             HD-quality{" "}
-            <a href="https://www.bannerbuzz.com/custom-vinyl-banners/p">
+            <Link href="https://www.bannerbuzz.com/custom-vinyl-banners/p">
               custom banner
-            </a>{" "}
+            </Link>{" "}
             printing. Select from ready-to-use designs or upload your own for a
             personalized touch.
           </li>
@@ -134,15 +135,15 @@ export default function Footer() {
               <div>
                 <div>
                   <div className={styles.contactInfoBox}>
-                    <a href="tel:800-580-4489">
+                    <Link href="tel:800-580-4489">
                       <span className="footerSprite phone"></span>
                       <p>
                         800-580-4489<span> Need to talk? We’re here 24x7.</span>
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className={styles.contactInfoBox}>
-                    <a href="/contact-us">
+                    <Link href="/contact-us">
                       <span></span>
                       <p>
                         {" "}
@@ -151,15 +152,15 @@ export default function Footer() {
                           For your questions, we’re just an email away.
                         </span>
                       </p>
-                    </a>
+                    </Link>
                   </div>
                   <div className={styles.contactInfoBox}>
-                    <a href="/faqs">
+                    <Link href="/faqs">
                       <span></span>
                       <p>
                         Need help?<span>Find your answers.</span>
                       </p>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -172,33 +173,33 @@ export default function Footer() {
                 <div className="panel-content">
                   <ul>
                     <li>
-                      <a href="/banners">Custom Banners</a>
+                      <Link href="/banners">Custom Banners</Link>
                     </li>
                     <li>
-                      <a href="/vinyl-banners">Vinyl Banners</a>
+                      <Link href="/vinyl-banners">Vinyl Banners</Link>
                     </li>
                     <li>
-                      <a href="/banner-stands">Banner Stand</a>
+                      <Link href="/banner-stands">Banner Stand</Link>
                     </li>
                     <li>
-                      <a href="/step-repeat-displays">
+                      <Link href="/step-repeat-displays">
                         Step &amp; Repeat Displays
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/canopy-tents">Canopy Tents</a>
+                      <Link href="/canopy-tents">Canopy Tents</Link>
                     </li>
                     <li>
-                      <a href="/neon-signs">Neon Signs</a>
+                      <Link href="/neon-signs">Neon Signs</Link>
                     </li>
                     <li>
-                      <a href="/flags">Custom Flags</a>
+                      <Link href="/flags">Custom Flags</Link>
                     </li>
                     <li>
-                      <a href="/asset-tags">Asset Tags</a>
+                      <Link href="/asset-tags">Asset Tags</Link>
                     </li>
                     <li>
-                      <a href="/business-cards">Business Cards</a>
+                      <Link href="/business-cards">Business Cards</Link>
                     </li>
                   </ul>
                 </div>
@@ -212,39 +213,43 @@ export default function Footer() {
                 <div>
                   <ul>
                     <li>
-                      <a href="/orderstatus">Order Tracking</a>
+                      <Link href="/orderstatus">Order Tracking</Link>
                     </li>
                     <li>
-                      <a href="/wallet">BannerBuzz Wallet</a>
+                      <Link href="/wallet">BannerBuzz Wallet</Link>
                     </li>
                     <li>
-                      <a href="/country/finland">International Shipping</a>
+                      <Link href="/country/finland">
+                        International Shipping
+                      </Link>
                     </li>
                     <li>
-                      <a href="/reviews">Customer Reviews</a>
+                      <Link href="/reviews">Customer Reviews</Link>
                     </li>
                     <li>
-                      <a href="/coupons">Special Offers</a>
+                      <Link href="/coupons">Special Offers</Link>
                     </li>
                     <li>
-                      <a href="/sitemap">Sitemap</a>
+                      <Link href="/sitemap">Sitemap</Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="https://www.bannerbuzz.com/blog/"
                         target="_blank"
                         rel="noreferrer"
                       >
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/brand/index.pdf" target="_blank">
+                      <Link href="/brand/index.pdf" target="_blank">
                         Buzz Catalog
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/free-charity-banner">Banners for a Cause</a>
+                      <Link href="/free-charity-banner">
+                        Banners for a Cause
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -258,24 +263,24 @@ export default function Footer() {
                 <div>
                   <ul>
                     <li>
-                      <a href="/about-us">About Us</a>
+                      <Link href="/about-us">About Us</Link>
                     </li>
                     <li>
-                      <a href="/contact-us">Contact us</a>
+                      <Link href="/contact-us">Contact us</Link>
                     </li>
                     <li>
-                      <a href="/privacy-policy">Privacy Policy</a>
+                      <Link href="/privacy-policy">Privacy Policy</Link>
                     </li>
                     <li>
-                      <a href="/terms-and-conditions">Terms of Use</a>
+                      <Link href="/terms-and-conditions">Terms of Use</Link>
                     </li>
                     <li>
-                      <a href="/bannerbuzz-affiliate-program">
+                      <Link href="/bannerbuzz-affiliate-program">
                         Affiliate Program
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/local">Areas of Service</a>
+                      <Link href="/local">Areas of Service</Link>
                     </li>
                   </ul>
                 </div>
@@ -289,30 +294,35 @@ export default function Footer() {
                 <div>
                   <ul>
                     <li>
-                      <a href="/faqs">FAQs</a>
+                      <Link href="/faqs">FAQs</Link>
                     </li>
                     <li>
-                      <a href="/return-policy">Return Policy</a>
+                      <Link href="/return-policy">Return Policy</Link>
                     </li>
                     <li>
-                      <a href="/faqs#FreeDesignProofs">Free Design Proofs</a>
+                      <Link href="/faqs#FreeDesignProofs">
+                        Free Design Proofs
+                      </Link>
                     </li>
                     <li>
-                      <a href="/faqs#shipping">Shipping</a>
+                      <Link href="/faqs#shipping">Shipping</Link>
                     </li>
                     <li>
-                      <a href="/sample-kit/p">Sample Kit</a>
+                      <Link href="/sample-kit/p">Sample Kit</Link>
                     </li>
                     <li>
-                      <a href="/vectorization/p">Vectorization</a>
+                      <Link href="/vectorization/p">Vectorization</Link>
                     </li>
                     <li>
-                      <a href="/quickrfq">Instant Quote</a>
+                      <Link href="/quickrfq">Instant Quote</Link>
                     </li>
                     <li>
-                      <a href="https://business.bannerbuzz.com" target="_blank">
+                      <Link
+                        href="https://business.bannerbuzz.com"
+                        target="_blank"
+                      >
                         Business Inquiries
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

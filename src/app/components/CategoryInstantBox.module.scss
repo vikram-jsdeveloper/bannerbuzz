@@ -1,0 +1,218 @@
+.categoryInstantBox {
+  padding: 12px 0px;
+  min-height: 66px;
+  background: rgb(244, 242, 254);
+}
+
+.container {
+  max-width: 1730px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropboxLabel {
+  line-height: 19px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(78, 78, 78);
+}
+
+.leftBox {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dropBoxWrapper {
+  position: relative;
+}
+
+.searchBtn {
+  width: auto;
+  margin: 0px;
+  min-width: 350px;
+  background-color: rgb(255, 255, 255);
+  height: 42px;
+  text-align: left;
+  padding: 0px 35px 0px 15px;
+  border: 1px solid rgb(212, 212, 212);
+  white-space: nowrap;
+  line-height: 22px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: rgb(73, 73, 73);
+  font-weight: normal;
+  position: relative;
+  svg {
+    position: absolute;
+    right: 12px;
+    top: 17px;
+  }
+}
+
+.dropBox {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  height: auto;
+  padding: 5px;
+  text-align: left;
+  background: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 15px;
+}
+
+.inputSearch {
+  width: 100%;
+  line-height: 20px;
+  font-family: var(--font-open-sans), Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(73, 73, 73);
+  font-weight: normal;
+  border-radius: 2px;
+  transition: 0.5s;
+  height: 34px !important;
+  border: 1px solid rgb(201, 201, 201) !important;
+  padding: 10px 12px 12px !important;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    transition: 0.5s;
+    border-color: rgb(251, 123, 72) !important;
+  }
+}
+
+.listing {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  li {
+    width: 100%;
+    float: left;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+    &.selected {
+      background: rgb(67, 58, 119);
+      color: rgb(255, 255, 255);
+    }
+  }
+}
+
+.rightBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  select {
+    background: url("https://www.bannerbuzz.com/static/images/common/selectDownArrow.svg")
+      no-repeat 85% center #fff;
+    width: auto;
+    min-width: 80px;
+    height: 42px;
+    border: solid 1px #d4d4d4;
+    padding: 8px 30px 8px 12px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    line-height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    font-family: var(--font-open-sans);
+    font-size: 13px;
+    color: #666666;
+    font-weight: normal;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+  input {
+    background: #fff;
+    width: 80px;
+    height: 42px;
+    border: solid 1px #d4d4d4;
+    padding: 8px 30px 8px 12px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    line-height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    font-family: var(--font-open-sans);
+    font-size: 13px;
+    color: #666666;
+    font-weight: normal;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  button {
+    border: none;
+    margin: 0px 0px 0px 8px;
+    width: auto;
+    height: 42px;
+    padding: 10px 20px;
+    font-family: var(--font-open-sans);
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-color: #fb7b48;
+    font-weight: normal;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: #ff956b;
+      border-color: #ff956b;
+      color: #fff;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease;
+    }
+  }
+}
+
+.totalBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .label {
+    font-size: 11px;
+    color: rgb(48, 48, 48);
+  }
+
+  .price {
+    display: flex;
+    flex-direction: column;
+
+    .newPrice {
+      font-size: 16px;
+      color: rgb(48, 48, 48);
+      font-weight: normal;
+      font-weight: 600;
+    }
+
+    .oldPrice {
+      line-height: 12px;
+      text-decoration: line-through;
+      font-size: 13px;
+      font-weight: 60;
+    }
+  }
+}

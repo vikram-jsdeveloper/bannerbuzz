@@ -1,0 +1,1091 @@
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &.middle {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.logoMainBox {
+  width: 207px;
+  height: auto;
+  margin: 0px;
+  position: relative;
+}
+
+.logoMainBox a {
+  width: 100%;
+  display: table-cell;
+  height: auto;
+  position: relative;
+}
+.logoMainBox img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.searchBox {
+  width: 570px;
+  height: 48px;
+  margin: 0;
+  position: relative;
+}
+
+.searchBox input.searchField {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #dbdbdb;
+  padding: 16px 50px 16px 16px;
+  vertical-align: middle;
+  background: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #303030;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  &:focus {
+    outline: none;
+    border-color: #f1623a;
+  }
+}
+
+.searchBox button.searchBtn {
+  width: 50px;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: 0 0;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  margin: 0;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox button.searchBtn svg {
+  width: 24px;
+  height: 24px;
+  color: #f1623a;
+}
+
+.commonSprite {
+  background: url("https://www.bannerbuzz.com/static/images/common/header/common-sprite.svg")
+    no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.headRightBox {
+  width: auto;
+  height: auto;
+  padding: 0 0 0 32px;
+  position: relative;
+  margin: 10px 0 0 0;
+  display: flex;
+}
+
+.callIcon {
+  background-position: -48px 0px;
+}
+
+.accountIcon {
+  background-position: -24px 0;
+}
+.cartIcon {
+  background-position: -72px 0;
+}
+
+.headRightBox .box {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+
+  &:not(:last-child) {
+    &:after {
+      display: block;
+      height: 24px;
+      width: 2px;
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -12px;
+      background: #eeeeee;
+    }
+  }
+}
+
+.headRightBox .box > div > span {
+  display: block;
+  line-height: 1.3;
+}
+
+// Navbar Rules
+.menuMainbox {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.menuMainbox.is-sticky {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.menuBox {
+  width: 100%;
+  height: auto;
+}
+
+.menuBox > ul {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  gap: 62px;
+  justify-content: space-between;
+}
+
+.menuBox > ul > li {
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: auto;
+  vertical-align: middle;
+}
+
+.menuBox > ul > li:last-child {
+  margin: 0px;
+}
+
+.menuBox > ul > li.active > a {
+  position: unset;
+  display: inline-block;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li:hover > a,
+.menuBox > ul > li ul.menuLevel3 li ul li a:hover {
+  color: #fb7b48;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li:hover > a::after {
+  border: none;
+  left: auto;
+}
+
+.menuBox > ul > li > div > ul li ul li ul li {
+  width: 100%;
+  float: left;
+  height: auto;
+}
+
+.menuBox > ul > li.mainMenu4 ul.menuLevel3 li {
+  height: 100%;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li:first-child ul.menuLevel3,
+.menuBox > ul > li ul.menuLevel2 > li:hover ul.menuLevel3,
+.menuBox > ul > li:hover::before,
+.menuBox > ul > li:hover > div {
+  display: block;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li.singleProduct > a::after {
+  display: none;
+}
+
+.menuBox > ul li.active > a::after,
+.menuBox > ul > li > a:hover::after {
+  content: "";
+  border-bottom: 2px solid #fb7b48;
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  right: 0px;
+  animation: line 0.25s ease forwards;
+}
+
+@keyframes line {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.menuBox > ul > li a {
+  line-height: 36px;
+  font-size: 14px;
+  display: block;
+  font-weight: 600;
+  color: #3f3f89;
+}
+
+.menuBox > ul > li > div {
+  display: none;
+  position: absolute;
+  height: 435px;
+  z-index: 9999;
+  left: 0;
+  top: 100%;
+  -webkit-box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.06);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.menuBox > ul > li > div > ul {
+  position: absolute;
+  height: 435px;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+}
+
+.menuBox > ul > li > div > ul li {
+  width: 100%;
+  float: left;
+  height: auto;
+  margin: 0;
+}
+
+.menuBox > ul > li > div > ul li ul {
+  width: 100%;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  z-index: 9;
+}
+
+.menuBox > ul > li > div > ul li ul li {
+  width: 100%;
+  float: left;
+  height: 435px;
+}
+
+.menuBox > ul > li > div > ul li ul li ul {
+  width: 240px;
+  float: left;
+  height: auto;
+  position: relative;
+}
+
+.menuBox > ul > li ul.menuLevel2 {
+  width: 260px;
+  background: #f5f5f5;
+  padding: 20px 0;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li {
+  padding: 7px 20px;
+  text-align: left;
+  position: static;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li > a {
+  padding: 0 10px 0 0;
+  display: block;
+  position: relative;
+  font-size: 14px;
+  color: #494949;
+  line-height: 22px;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li > a::after {
+  content: "\f105";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-family: "FontAwesome", Helvetica, Arial, sans-serif;
+}
+
+.menuBox > ul > li ul.menuLevel2 > li > ul.menuLevel3 {
+  display: none;
+  background: #fff;
+}
+
+.menuBox > ul > li ul.menuLevel3 {
+  float: left;
+  height: 435px;
+}
+
+.menuBox > ul > li ul.menuLevel3 li {
+  width: 100%;
+  float: left;
+  height: 435px;
+  padding: 25px 15px;
+  position: static;
+  overflow: hidden;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul {
+  width: 260px;
+  left: 0;
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 9999;
+}
+
+.menuBox
+  ul
+  li.mainMenu1
+  ul.menuLevel2
+  li.menuLevel2Left:first-child
+  > ul.menuLevel3
+  li
+  ul {
+  width: 205px;
+}
+
+.menuBox ul li.mainMenu2 ul.menuLevel2 li.menuLevel2Left > ul.menuLevel3 {
+  width: 1200px;
+}
+
+.menuBox
+  ul
+  li.mainMenu2
+  ul.menuLevel2
+  li.menuLevel2Left:nth-child(4)
+  > ul.menuLevel3
+  li
+  ul {
+  width: 380px !important;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul li {
+  padding: 0 15px;
+  height: auto;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul li a {
+  display: block;
+  text-align: left;
+  line-height: 24px;
+  font-size: 13px;
+  color: #7c7c7c;
+  font-weight: 400;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul li a:hover::after {
+  border: none;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul li a.ProductSticker {
+  margin-bottom: -4px;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul li.menuLevelTitle {
+  margin: 10px 0;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul li.menuLevelTitle a {
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid #f5f5f5;
+  margin: 0;
+  font-size: 17px;
+  color: #fb7b48;
+
+  font-weight: 400;
+}
+
+.menuBox > ul > li ul.menuLevel3 li ul li.menuLevelTitle:first-child {
+  margin: 0 0 10px;
+}
+
+.menuBox > ul > li ul.menuLevel3 li img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  height: 300px;
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+}
+
+.menuBox > ul > li.mainMenu1 div {
+  width: 1330px;
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+  width: 1165px;
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu8 ul.menuLevel2,
+.menuBox > ul > li.mainMenu8 ul.menuLevel3 li {
+  height: 400px;
+}
+
+.menuBox > ul > li.mainMenu8 ul.menuLevel2 {
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu1 ul.menuLevel2,
+.menuBox > ul > li.mainMenu1 ul.menuLevel3 li {
+  height: 455px;
+}
+.menuBox > ul > li.mainMenu1 ul.menuLevel2 {
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu1 ul.menuLevel3 {
+  width: 1070px;
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu1 ul.menuLevel3 li ul li,
+.menuBox > ul > li.mainMenu6 ul.menuLevel3 li ul li,
+.menuBox > ul > li.mainMenu7 ul.menuLevel3 li ul li,
+.menuBox > ul > li.mainMenu8 ul.menuLevel3 li ul li {
+  height: auto;
+}
+
+.menuBox > ul > li.mainMenu2 div {
+  width: 1460px;
+  height: 600px;
+  left: -100px;
+}
+
+.menuBox > ul > li.mainMenu2 ul.menuLevel2,
+.menuBox > ul > li.mainMenu2 ul.menuLevel3 > li {
+  height: auto;
+}
+
+.menuBox > ul > li.mainMenu2 ul.menuLevel2 {
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu2 ul.menuLevel2 li:nth-child(2n) ul.menuLevel3 ul,
+.menuBox > ul > li.mainMenu2 ul.menuLevel2 li:nth-child(9n) ul.menuLevel3 ul {
+  width: 390px;
+}
+
+.menuBox > ul > li.mainMenu2 ul.menuLevel2 li:nth-child(5n) ul.menuLevel3 ul {
+  width: 400px;
+}
+
+.menuBox > ul > li.mainMenu2 ul.menuLevel3 {
+  width: 804px;
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu2 ul.menuLevel3 > li > ul {
+  width: 370px !important;
+  height: 588px;
+}
+
+.menuBox > ul > li.mainMenu2 ul.menuLevel3 > li > ul + ul {
+  width: 220px;
+  height: 490px;
+}
+
+.menuBox > ul > li.mainMenu3 div {
+  width: 1040px;
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu3 ul.menuLevel2 {
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu3 ul.menuLevel3 {
+  width: 780px;
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu3 .menuLevel2 li ul.menuLevel3 ul {
+  width: 380px;
+}
+
+.menuBox > ul > li.mainMenu4 div {
+  width: 960px;
+  height: 500px;
+}
+
+.menuBox > ul > li.mainMenu4 .menuLevel2 {
+  height: 500px;
+}
+
+.menuBox > ul > li.mainMenu4 ul.menuLevel3 {
+  width: 700px;
+  height: 500px;
+  background: #fff;
+}
+
+.menuBox > ul > li.mainMenu4 ul.menuLevel3 li ul {
+  width: 275px;
+}
+
+.menuBox > ul > li.mainMenu5 div {
+  width: 700px;
+  left: -40px;
+}
+
+.menuBox > ul > li.mainMenu5 ul.menuLevel3 {
+  width: 700px;
+  background: #fff;
+}
+
+.menuBox > ul > li.mainMenu5 ul.menuLevel3 li ul {
+  width: 200px;
+}
+
+.menuBox > ul > li.mainMenu6 div {
+  width: 790px;
+  height: 543px;
+  left: -260px;
+}
+
+.menuBox > ul > li.mainMenu6 ul.menuLevel2,
+.menuBox > ul > li.mainMenu6 ul.menuLevel3 li {
+  height: 543px;
+}
+
+.menuBox > ul > li.mainMenu6 ul.menuLevel3 {
+  width: 530px;
+  height: 543px;
+}
+
+.menuBox > ul > li.mainMenu6 ul.menuLevel3 li ul {
+  width: 250px;
+}
+
+.menuBox > ul > li.mainMenu7 div {
+  width: 440px;
+  left: auto;
+  right: -230px;
+  height: 480px;
+}
+
+.menuBox > ul > li.mainMenu7 ul.menuLevel2,
+.menuBox > ul > li.mainMenu7 ul.menuLevel3 li {
+  height: 480px;
+}
+
+.menuBox > ul > li.mainMenu7 ul.menuLevel3 {
+  width: 440px;
+  height: 480px;
+  background: #fff;
+}
+
+.menuBox > ul > li.mainMenu7 ul.menuLevel3 li ul {
+  width: 350px;
+}
+
+.menuBox > ul > li.mainMenu8 div {
+  width: 1425px;
+  right: -280px;
+  left: auto;
+  height: 600px;
+}
+
+.menuBox > ul > li.mainMenu8 ul.menuLevel3 {
+  width: 640px;
+  height: 520px;
+  background: #fff;
+}
+
+.menuBox > ul > li.mainMenu8 ul.menuLevel3 li ul {
+  width: 280px;
+}
+
+.menuBox > ul > li.mainMenu9 div {
+  width: 770px;
+  right: 0;
+  left: auto;
+}
+
+.menuBox > ul > li.mainMenu9 ul.menuLevel3 {
+  width: 770px;
+  background: #fff;
+}
+
+.menuMainbox .white {
+  background: #fff;
+  color: #191919;
+}
+
+.menuMainbox .green {
+  background: #015731;
+  color: #fff;
+}
+
+.menuMainbox .red {
+  background: #cf1919;
+  color: #fff;
+}
+
+.menuMainbox .pink {
+  background: #fb126d;
+  color: #fff;
+}
+
+.menuMainbox .blue {
+  background: #004eed;
+  color: #fff;
+}
+
+.menuMainbox .yellow {
+  background: #ffe057;
+  color: #191919;
+}
+
+@media screen and (max-width: 1680px) {
+  .menuBox > ul > li.mainMenu8 div {
+    right: -150px;
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+    height: 600px;
+  }
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2,
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li {
+    height: 400px;
+  }
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .menuBox > ul > li.mainMenu8 div {
+    width: 1260px;
+    right: -175px;
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+    width: 1113px;
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2,
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li {
+    height: 400px;
+  }
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 {
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li ul {
+    width: 269px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .menuBox > ul > li.mainMenu8 div {
+    width: 1260px;
+    right: -150px;
+    height: 500px;
+  }
+
+  .menuBox > ul > li {
+    margin: 0 50px 0 0;
+  }
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+    width: 1151px;
+  }
+  .menuBox > ul > li.mainMenu1 ul.menuLevel2 {
+    height: 550px;
+  }
+  .menuBox .mainMenu1 .menuLevel2Left .menuLevel3 {
+    height: 550px;
+  }
+  .menuBox > ul > li.mainMenu1 div {
+    height: 550px;
+  }
+  .menuBox > ul > li.mainMenu2 div {
+    left: -100px;
+    height: 570px;
+  }
+  .menuBox
+    ul
+    li.mainMenu2
+    ul.menuLevel2
+    li.menuLevel2Left:nth-child(4)
+    > ul.menuLevel3
+    li
+    ul {
+    width: 340px !important;
+  }
+  .menuBox > ul > li.mainMenu2 ul.menuLevel2 {
+    height: 570px;
+  }
+  .menuBox ul li.mainMenu2 ul.menuLevel2 li.menuLevel2Left > ul.menuLevel3 {
+    height: 570px;
+  }
+  .menuBox > ul > li.mainMenu3 ul.menuLevel2 > li > ul.menuLevel3 {
+    height: 530px;
+  }
+  .menuBox > ul > li.mainMenu3 ul.menuLevel2 {
+    height: 530px;
+  }
+  .menuBox > ul > li.mainMenu3 div {
+    height: 530px;
+  }
+  .menuBox
+    > ul
+    > li
+    ul.menuLevel2
+    > li.menuLevel2Left:last-child
+    ul.menuLevel3
+    li
+    ul {
+    width: 240px !important;
+  }
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 {
+    height: 500px;
+  }
+  .menuBox > ul > li.mainMenu8 div {
+    height: 500px;
+  }
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+    height: 500px;
+    width: 1000px;
+  }
+  .menuBox
+    > ul
+    > li.mainMenu5
+    ul.menuLevel2
+    > li.menuLevel2Left:last-child
+    ul.menuLevel3
+    li
+    ul {
+    width: 210px !important;
+  }
+
+  .menuBox > ul {
+    gap: 20px;
+  }
+
+  .menuBox > ul > li {
+    margin: 0;
+  }
+
+  .menuBox > ul > li a {
+    font-size: 13px;
+  }
+
+  .menuBox > ul > li ul.menuLevel3 li ul {
+    width: 255px;
+  }
+
+  .menuBox > ul > li.mainMenu1 div {
+    width: 1320px;
+  }
+
+  .menuBox > ul > li.mainMenu1 ul.menuLevel3 {
+    width: 1060px;
+  }
+
+  .menuBox > ul > li.mainMenu3 div {
+    left: -30px;
+  }
+
+  .menuBox > ul > li.mainMenu4 div {
+    left: -177px;
+  }
+  .menuBox > ul > li.mainMenu5 div {
+    left: -150px;
+  }
+  .menuBox > ul > li.mainMenu6 div {
+    left: -300px;
+  }
+
+  .menuBox > ul > li.mainMenu7 div {
+    right: -188px;
+  }
+
+  .menuBox ul li.mainMenu2 ul.menuLevel2 li.menuLevel2Left > ul.menuLevel3 {
+    width: 1050px;
+  }
+  .menuBox > ul > li.mainMenu2 div {
+    width: 1310px;
+  }
+}
+
+@media screen and (max-width: 1368px) {
+  .menuBox > ul > li.mainMenu1 div {
+    height: 530px;
+  }
+  .menuBox > ul > li.mainMenu1 ul.menuLevel2 {
+    height: 530px;
+  }
+  .menuBox .mainMenu1 .menuLevel2Left .menuLevel3 {
+    height: 530px;
+  }
+  .menuBox
+    ul
+    li.mainMenu6
+    ul.menuLevel2
+    li.menuLevel2Left:nth-child(3)
+    > ul.menuLevel3
+    li
+    ul {
+    width: 200px !important;
+  }
+  .menuBox > ul > li.mainMenu6 div {
+    height: 490px;
+  }
+  .menuBox > ul > li.mainMenu6 ul.menuLevel2 {
+    height: 490px;
+  }
+  .menuBox > ul > li.mainMenu6 ul.menuLevel3 {
+    height: 490px;
+  }
+  .menuBox > ul > li.mainMenu8 div {
+    right: -160px;
+    height: 509px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .menuBox > ul > li.mainMenu8 div {
+    width: 1337px;
+    right: -159px;
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+    width: 1077px;
+    height: 509px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li ul {
+    width: 261px !important;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 {
+    height: 509px;
+  }
+  .menuBox > ul > li.mainMenu2 div {
+    left: -130px;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .menuBox > ul > li.mainMenu8 div {
+    width: 1337px;
+    right: -214px;
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2,
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li {
+    height: 509px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+    width: 1077px;
+    height: 509px;
+  }
+
+  .menuBox > ul > li {
+    margin: 0 37px 0 0;
+  }
+
+  .menuBox > ul > li ul.menuLevel3 li ul {
+    width: 210px;
+  }
+
+  .menuBox > ul > li.mainMenu1 div {
+    width: 1160px;
+    left: -24px;
+  }
+
+  .menuBox > ul > li.mainMenu1 ul.menuLevel3 {
+    width: 900px;
+  }
+
+  .menuBox > ul > li.mainMenu3 div {
+    left: -189px;
+  }
+
+  .menuBox > ul > li.mainMenu5 div {
+    left: -190px;
+  }
+
+  .menuBox > ul > li.mainMenu6 div {
+    left: -330px;
+  }
+
+  .menuBox > ul > li.mainMenu7 div {
+    right: -260px;
+  }
+
+  .menuBox > ul > li.mainMenu8 div {
+    right: -214px;
+    height: 509px;
+  }
+  .menuBox > ul > li.mainMenu2 div {
+    left: -180px;
+  }
+  .menuBox
+    ul
+    li.mainMenu1
+    ul.menuLevel2
+    li.menuLevel2Left:first-child
+    > ul.menuLevel3
+    li
+    ul {
+    width: 186px;
+  }
+  .menuBox > ul > li.mainMenu1 ul.menuLevel3 {
+    width: 970px;
+  }
+  .menuBox > ul > li.mainMenu1 div {
+    width: 1230px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .menuBox > ul > li.mainMenu4 div {
+    left: -300px;
+  }
+
+  .menuBox > ul > li.mainMenu3 ul.menuLevel2 > li > ul.menuLevel3 {
+    height: 490px;
+  }
+
+  .menuBox > ul > li.mainMenu3 ul.menuLevel2 {
+    height: 490px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li ul {
+    width: 240px !important;
+  }
+  .menuBox > ul > li.mainMenu1 div {
+    height: 610px;
+  }
+  .menuBox > ul > li.mainMenu1 ul.menuLevel2 {
+    height: 610px;
+  }
+  .menuBox > ul > li.mainMenu1 ul.menuLevel3 {
+    height: 610px;
+  }
+  .menuBox > ul > li.mainMenu1 ul.menuLevel3 {
+    width: 900px;
+  }
+  .menuBox > ul > li.mainMenu1 div {
+    width: 1160px;
+  }
+  .menuBox
+    ul
+    li.mainMenu1
+    ul.menuLevel2
+    li.menuLevel2Left:first-child
+    > ul.menuLevel3
+    li
+    ul {
+    width: 174px;
+  }
+
+  .menuBox .mainMenu1 .menuLevel2Left .menuLevel3 {
+    height: 610px;
+  }
+
+  .menuBox
+    ul
+    li.mainMenu2
+    ul.menuLevel2
+    li.menuLevel2Left:nth-child(4)
+    > ul.menuLevel3
+    li
+    ul {
+    width: 300px !important;
+  }
+
+  .menuBox ul li.mainMenu2 ul.menuLevel2 li.menuLevel2Left > ul.menuLevel3 {
+    height: 610px;
+  }
+
+  .menuBox > ul > li.mainMenu2 ul.menuLevel2 {
+    height: 610px;
+  }
+
+  .menuBox > ul > li.mainMenu2 div {
+    height: 610px;
+    left: -137px;
+    width: 1210px;
+  }
+
+  .menuBox > ul > li.mainMenu4 div {
+    left: -300px;
+  }
+
+  .menuBox ul li.mainMenu2 ul.menuLevel2 li.menuLevel2Left > ul.menuLevel3 {
+    width: 950px;
+  }
+
+  .menuBox > ul > li.mainMenu8 div {
+    width: 1251px;
+    right: -172px;
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2,
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li {
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel2 li ul.menuLevel3 {
+    width: 991px;
+    height: 600px;
+  }
+
+  .menuBox > ul > li.mainMenu8 ul.menuLevel3 li ul {
+    width: 240px !important;
+  }
+
+  .menuBox > ul > li.mainMenu1 div {
+    height: 610px;
+  }
+
+  .menuBox > ul > li.mainMenu1 ul.menuLevel2 {
+    height: 610px;
+  }
+
+  .menuBox > ul > li.mainMenu1 ul.menuLevel3 {
+    height: 610px;
+  }
+  .menuBox > ul > li.mainMenu3 div {
+    height: 490px;
+  }
+  .menuBox > ul > li ul.menuLevel3 li img {
+    height: 150px;
+  }
+}

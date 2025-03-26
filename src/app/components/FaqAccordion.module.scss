@@ -1,0 +1,46 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1730px;
+
+  h2 {
+    text-align: center;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 24px;
+    color: #303030;
+    margin: 40px 0 30px;
+    clear: both;
+  }
+}
+
+.panelTitle {
+  position: relative;
+  background: rgb(248, 248, 248);
+  padding: 12px 45px 12px 24px;
+  cursor: pointer;
+  display: block;
+  font-family: open_sanssemibold, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+  font-weight: normal;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  margin: 0 0 20px;
+
+  svg {
+    width: 24px;
+  }
+}
+
+.panelContent {
+  padding: 0px 0px 0px 24px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}

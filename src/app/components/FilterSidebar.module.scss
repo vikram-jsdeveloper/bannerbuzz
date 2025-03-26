@@ -1,0 +1,43 @@
+.filterBox {
+  margin-bottom: 20px;
+}
+
+.box {
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.title {
+  padding: 16px 0px;
+  line-height: 20px;
+  background: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  h3 {
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+    font-weight: normal;
+    border-radius: 0px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  svg {
+    width: 24px;
+  }
+}
+
+.listBox {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+
+  li {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+}
